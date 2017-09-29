@@ -1,0 +1,32 @@
+---
+title: kinetic
+timezone: UTC
+description:
+#url: ""
+url: "http://127.0.0.1:4000"
+keywords:
+markdown: kramdown
+layout: default
+
+collections:
+  messages:
+    title: Messages
+    output: true
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: posts
+  values:
+    layout: post
+- scope:
+    path: ''
+    type: messages
+  values:
+    layout: message
+    permalink: "/messages/:year/:month/:day/"
