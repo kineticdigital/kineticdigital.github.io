@@ -7,6 +7,8 @@ url: "http://127.0.0.1:4000"
 keywords:
 markdown: kramdown
 layout: default
+plugins:
+- jekyll-menus
 
 collections:
   messages:
