@@ -10,25 +10,10 @@ layout: default
 plugins:
 - jekyll-menus
 
-collections:
-  messages:
-    title: Messages
-    output: true
-  posts:
-    title: Posts
-    output: true
-  uploads:
-    title: Uploads
-    output: true
 defaults:
 - scope:
     path: ''
     type: posts
   values:
-    layout: post
-- scope:
-    path: ''
-    type: messages
-  values:
-    layout: message
-    permalink: "/messages/:year/:month/:day/"
+    layout: blog
+    permalink: "/blog/:year/:month/:day/"
