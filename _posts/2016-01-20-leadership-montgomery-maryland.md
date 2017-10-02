@@ -2,7 +2,8 @@
 title: Leadership Montgomery Maryland
 subtitle: Re-envisioning a digital strategy
 type: case-study
-image:
+image: 
+date: 2016-01-20 00:00:00 +0000
 ---
 
 Leadership Montgomery (LMMD) is a 25 year old non-profit organization in Maryland that seeks to instill leadership skills in its program participants and graduates. Their programs are aimed at age groups that range from Teens to Seniors. Graduates include major CEO's and high ranking government officials in the region who consider the programs an invaluable asset to the community.
