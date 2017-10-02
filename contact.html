@@ -36,19 +36,22 @@ menus:
       <a id="main-content"></a>
       <div class="region region-content">
         <section id="block-system-main" class="block block-system clearfix">
-          <form class="user-info-from-cookie contact-form" action="/contact" method="post" id="contact-site-form" accept-charset="UTF-8">
+          <form action="https://docs.google.com/forms/d/e/1FAIpQLScmPYQmGPY9b_Bcj-aiZjt5vvRE8jZQOBZr8Cb-hD2FFyx5Ew/formResponse" target="_self" method="POST" id="contact-site-form" class="user-info-from-cookie contact-form">
             <div>
               <div class="form-item form-item-name form-type-textfield form-group"> <label class="control-label" for="edit-name">Your name <span class="form-required" title="This field is required.">*</span></label>
-                <input class="form-control form-text required" type="text" id="edit-name" name="name" value="" size="60" maxlength="255" /></div>
-              <div class="form-item form-item-mail form-type-textfield form-group"> <label class="control-label" for="edit-mail">Your e-mail address <span class="form-required" title="This field is required.">*</span></label>
-                <input class="form-control form-text required" type="text" id="edit-mail" name="mail" value="" size="60" maxlength="255" /></div>
-              <div class="form-item form-item-subject form-type-textfield form-group"> <label class="control-label" for="edit-subject">Subject <span class="form-required" title="This field is required.">*</span></label>
-                <input class="form-control form-text required" type="text" id="edit-subject" name="subject" value="" size="60" maxlength="255" /></div>
-              <div class="form-item form-item-message form-type-textarea form-group"> <label class="control-label" for="edit-message">Message <span class="form-required" title="This field is required.">*</span></label>
-                <div class="form-textarea-wrapper resizable"><textarea class="form-control form-textarea required" id="edit-message" name="message" cols="60" rows="5"></textarea></div>
-              </div><input type="hidden" name="form_build_id" value="form-1io2jrJSlpHTgC5oz2_tR9DstEH8sl_bEIcP6vvRzuo" />
-              <input type="hidden" name="form_id" value="contact_site_form" />
-              <div class="form-actions form-wrapper form-group" id="edit-actions"><button type="submit" id="edit-submit" name="op" value="Send message" class="btn btn-default form-submit">Send message</button>
+                <input type="text" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Name" aria-describedby="i.desc.1494342357 i.err.1494342357" name="entry.951245999" value="" dir="auto" data-initial-dir="auto" data-initial-value="" class="form-item form-item-mail form-type-textfield form-group" size="60" maxlength="255">
+              </div>
+              <div class="form-item form-item-name form-type-textfield form-group"> <label class="control-label" for="edit-mail">Your e-mail address <span class="form-required" title="This field is required.">*</span></label>
+                <input type="text" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Email" aria-describedby="i.desc.60460321 i.err.60460321" name="entry.197774746" value="" dir="auto" data-initial-dir="auto" data-initial-value="" size="60" maxlength="255">
+              </div>
+              <div class="form-item form-item-name form-type-textfield form-group"> <label class="control-label" for="edit-subject">Subject <span class="form-required" title="This field is required.">*</span></label>
+                <input type="text" class="quantumWizTextinputPaperinputInput exportInput" jsname="YPqjbf" autocomplete="off" tabindex="0" aria-label="Subject" aria-describedby="i.desc.1496962684 i.err.1496962684" name="entry.1858798197" value="" dir="auto" data-initial-dir="auto" data-initial-value="" size="60" maxlength="255">
+              </div>
+              <div class="form-item form-item-name form-type-textfield form-group"> <label class="control-label" for="edit-message">Message <span class="form-required" title="This field is required.">*</span></label>
+                <textarea class="quantumWizTextinputPapertextareaInput exportTextarea" jsname="YPqjbf" data-rows="1" tabindex="0" aria-label="Message" jscontroller="gZjhIf" jsaction="input:Lg5SV;ti6hGc:XMgOHc;rcuQ6b:WYd;" name="entry.1058105081" dir="auto" data-initial-dir="auto" data-initial-value="" style="height: 24px;"></textarea>
+              </div>
+              <div>
+                <input type="submit" value="Submit">
               </div>
             </div>
           </form>
@@ -58,3 +61,20 @@ menus:
   </div>
 </div>
 <div class="postscript"></div>
+<script type="text/javascript">
+  $(function() {
+    var $form = $('#contact-site-form');
+    $form.on('submit', function(e) {
+      e.preventDefault();
+      $form.find(':submit').prop('disabled', true);
+      $.ajax({
+        url: $form.attr('action'),
+        type: 'post',
+        data: $form.serialize(),
+        complete: function() {
+          alert('Thank you for your submission!');
+        }
+      });
+    })
+  });
+</script>
