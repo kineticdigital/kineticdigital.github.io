@@ -1,6 +1,7 @@
 ---
 client: Pittsburg Steelers
 logo: "/img/logos/small/steelers_sm.png"
+small_logo: "/img/logos/steelers.png"
 title: The most popular team in the NFL.
 subheading: We led the effort to convert the fan site to the Drupal Content Management
   system for the most popular team in the NFL.

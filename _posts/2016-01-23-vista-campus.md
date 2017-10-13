@@ -1,6 +1,7 @@
 ---
 client: Vista Campus
 logo: "/img/logos/vista.png"
+small_logo: "/img/logos/vista.png"
 title: Supporting Communities through Public Service.
 subheading: We enhanced features of the digital VISTA campus community for the 50th
   anniversary of the Americore

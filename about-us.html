@@ -82,177 +82,29 @@ menu:
         </div>
         <div class="view-content">
           <div class="views-responsive-grid views-responsive-grid-horizontal views-columns-6 client-grid">
+            {% assign rows = site.categories.case_study.size | divided_by: 6.0 | ceil %}
+            {% for i in (1..rows) %}
             <div class="row views-row-1 row">
+              {% for case_study in site.categories.case_study limit:5 offset:offset %}
               <div class="col-md-2 col-xs-6 views-column-1 col-md-2 col-xs-6">
                 <div class="views-field views-field-field-case-thumb">
                   <div class="field-content">
                     <div class="wow fadeInUp animated" data-wow-delay="100ms">
-                      <div class="pdf-thumb-box"><a href="case-study/state-north-carolina"><img src="/img/logos/state_nc3.png" alt="State of North Carolina" /><div class="pdf-thumb-box-overlay">
- <i class="ion-ios-arrow-thin-right"></i>
-</div></a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 col-xs-6 views-column-2">
-                <div class="views-field views-field-field-case-thumb">
-                  <div class="field-content">
-                    <div class="wow fadeInUp animated" data-wow-delay="200ms">
-                      <div class="pdf-thumb-box"><a href="case-study/state-missouri-department-labor-and-industries"><img alt="State of Missouri" src="/img/logos/labor_mo4.png" /></a>
-                        <div class="pdf-thumb-box-overlay"><i class="ion-ios-arrow-thin-right"> </i></div>
+                      <div class="pdf-thumb-box">
+                        <a href="{{ case_study.url }}">
+                          <img src="{{ case_study.small_logo }}" alt="{{ case_study.client }}" />
+                          <div class="pdf-thumb-box-overlay">
+                            <i class="ion-ios-arrow-thin-right"></i>
+                          </div>
+                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-2 col-xs-6 views-column-3">
-                <div class="views-field views-field-field-case-thumb">
-                  <div class="field-content">
-                    <div class="wow fadeInUp animated" data-wow-delay="300ms">
-                      <div class="pdf-thumb-box"><a href="case-study/pittsburgh-steelers"><img alt="Steelers Nation Unite" src="/img/logos/steelers.png" /></a>
-                        <div class="pdf-thumb-box-overlay"><i class="ion-ios-arrow-thin-right"></i></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 col-xs-6 views-column-4">
-                <div class="views-field views-field-field-case-thumb">
-                  <div class="field-content">
-                    <div class="wow fadeInUp animated" data-wow-delay="400ms">
-                      <div class="pdf-thumb-box"><a href="case-study/state-missouri-department-labor-and-industries"><img src="/img/logos/state_georgia.png" alt="State of Georgia" /><div class="pdf-thumb-box-overlay">
- <i class="ion-ios-arrow-thin-right"></i>
-</div></a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 col-xs-6 views-column-5">
-                <div class="views-field views-field-field-case-thumb">
-                  <div class="field-content">
-                    <div class="wow fadeInUp animated" data-wow-delay="400ms">
-                      <div class="pdf-thumb-box"><a href="case-study/possible"><img alt="Possible" src="/img/logos/possible.png" /></a>
-                        <div class="pdf-thumb-box-overlay"><a href="case-study/possible"><i class="ion-ios-arrow-thin-right"></i> </a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 col-xs-6 views-column-6 col-md-2-last col-xs-6">
-                <div class="views-field views-field-field-case-thumb">
-                  <div class="field-content">
-                    <div class="wow fadeInUp animated" data-wow-delay="600ms">
-                      <div class="pdf-thumb-box"><a href="case-study/us-national-archives"><img src="/img/logos/nat_archive.png" alt="U.S. National Archives" /><div class="pdf-thumb-box-overlay">
- <i class="ion-ios-arrow-thin-right"></i>
-</div></a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              {% endfor %}
             </div>
-            <div class="row views-row-2">
-              <div class="col-md-2 col-xs-6 views-column-1 col-md-2 col-xs-6">
-                <div class="views-field views-field-field-case-thumb">
-                  <div class="field-content">
-                    <div class="wow fadeInUp animated" data-wow-delay="600ms">
-                      <div class="pdf-thumb-box"><a href="case-study/hasbro"><img src="/img/logos/hasbro.png" alt="Hasbro Inc." /><div class="pdf-thumb-box-overlay">
- <i class="ion-ios-arrow-thin-right"></i>
-</div></a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 col-xs-6 views-column-2">
-                <div class="views-field views-field-field-case-thumb">
-                  <div class="field-content">
-                    <div class="wow fadeInUp animated" data-wow-delay="800ms">
-                      <div class="pdf-thumb-box"><a href="case-study/voya-financial"><img alt="Voya Financial" src="/img/logos/voya.png" /></a>
-                        <div class="pdf-thumb-box-overlay"><a href="case-study/voya-financial"><i class="ion-ios-arrow-thin-right"></i> </a></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 col-xs-6 views-column-3">
-                <div class="views-field views-field-field-case-thumb">
-                  <div class="field-content">
-                    <div class="wow fadeInUp animated" data-wow-delay="900ms">
-                      <div class="pdf-thumb-box"><a href="case-study/americore-vista-campus"><img alt="Possible" src="/img/logos/vista.png" /></a>
-                        <div class="pdf-thumb-box-overlay"><i class="ion-ios-arrow-thin-right"></i></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 col-xs-6 views-column-4">
-                <div class="views-field views-field-field-case-thumb">
-                  <div class="field-content">
-                    <div class="wow fadeInUp animated" data-wow-delay="1000ms">
-                      <div class="pdf-thumb-box"><a href="case-study/washington-state-department-veterans-affairs"><img alt="Possible" src="/img/logos/wa_dva.png" /></a>
-                        <div class="pdf-thumb-box-overlay"><i class="ion-ios-arrow-thin-right"></i></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 col-xs-6 views-column-5">
-                <div class="views-field views-field-field-case-thumb">
-                  <div class="field-content">
-                    <div class="wow fadeInUp animated" data-wow-delay="1100ms">
-                      <div class="pdf-thumb-box"><a href="case-study/new-york-state-unified-courts"><img src="/img/logos/ny_state_courts.png" alt="NY Courts" /><div class="pdf-thumb-box-overlay">
- <i class="ion-ios-arrow-thin-right"></i>
-</div></a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 col-xs-6 views-column-6 col-md-2-last col-xs-6">
-                <div class="views-field views-field-field-case-thumb">
-                  <div class="field-content">
-                    <div class="wow fadeInUp animated" data-wow-delay="1200ms">
-                      <div class="pdf-thumb-box"><a href="/case-study/talentwise"><img src="/img/logos/talentwise.png" alt="Possible" /><div class="pdf-thumb-box-overlay">
- <i class="ion-ios-arrow-thin-right"></i>
-</div></a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row views-row-3 row">
-              <div class="col-md-2 col-xs-6 views-column-1 col-md-2 col-xs-6">
-                <div class="views-field views-field-field-case-thumb">
-                  <div class="field-content">
-                    <div class="wow fadeInUp animated" data-wow-delay="1300ms">
-                      <div class="pdf-thumb-box"><a href="case-study/sunergy-systems"><img src="/img/logos/sunergy.png" alt="Sunergy Systems" /><div class="pdf-thumb-box-overlay">
- <i class="ion-ios-arrow-thin-right"></i>
-</div></a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 col-xs-6 views-column-2">
-                <div class="views-field views-field-field-case-thumb">
-                  <div class="field-content">
-                    <div class="wow fadeInUp animated" data-wow-delay="1400ms">
-                      <div class="pdf-thumb-box"><a href="case-study/state-new-york-talk2prevent"><img src="/img/logos/nytalk.png" alt="State of New York - Talk2Prevent.com" /><div class="pdf-thumb-box-overlay">
- <i class="ion-ios-arrow-thin-right"></i>
-</div></a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-2 col-xs-6 views-column-3">
-                <div class="views-field views-field-field-case-thumb">
-                  <div class="field-content">
-                    <div class="wow fadeInUp animated" data-wow-delay="1500ms">
-                      <div class="pdf-thumb-box"><a href="case-study/leadership-montgomery-maryland"><img src="/img/logos/lmmd.png" alt="Leadership Montgomery" /><div class="pdf-thumb-box-overlay">
- <i class="ion-ios-arrow-thin-right"></i>
-</div></a></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {% endfor %}
           </div>
         </div>
       </div>
