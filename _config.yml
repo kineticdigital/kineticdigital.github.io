@@ -9,8 +9,16 @@ markdown: kramdown
 layout: default
 plugins:
 - jekyll-menus
-
+collections:
+  careers:
+    output: true
 defaults:
+- scope:
+    path: ''
+    type: careers
+  values:
+    layout: career
+    permalink: "/career/:title"
 - scope:
     path: ''
     type: posts

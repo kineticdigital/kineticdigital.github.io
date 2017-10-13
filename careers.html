@@ -13,7 +13,7 @@ menu:
 <div class="feature-wrapper">
   <div class="container">
     <div class="pageheader">
-      <h1 class="page-header">CAREERS</h1>
+      <h1 class="page-header">{{ page.title }}</h1>
     </div>
   </div>
   <div class="featured">
@@ -48,26 +48,31 @@ menu:
             <div class="view-header">
               <a name="#services" id="#services"> </a> </div>
             <div class="view-content">
+              {% for career in site.careers %}
               <div class="views-row views-row-1 views-row-odd views-row-first views-row-last wow animated fadeInUp delay-1">
-                <article id="node-22" class="node node-jobs node-teaser clearfix" about="/content/creative-director" typeof="sioc:Item foaf:Document">
+                <article id="node-22" class="node node-jobs node-teaser clearfix" about="{{ career.url }}" typeof="sioc:Item foaf:Document">
                   <header>
-                    <h2><a href="/content/creative-director">Creative Director</a></h2>
-                    <span property="dc:title" content="Creative Director" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span> </header>
+                    <h2><a href="{{ career.url }}">{{ career.title }}</a></h2>
+                    <span property="dc:title" content="{{ career.title }}" class="rdf-meta element-hidden"></span>
+                    <span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+                  </header>
                   <div class="field field-name-body field-type-text-with-summary field-label-hidden">
                     <div class="field-items">
                       <div class="field-item even" property="content:encoded">
-                        <p>Kinetic is looking for an accomplished Creative Director to partner with as a co-principal in our company. The candidate for this role should be a true expert, ready to build and grow Kinetic’s brand in a highly competitive space.
-                          You will be responsible for developing a global Brand strategy, localizing it, and bringing it to life across all digital and traditional channels. </p>
+                        <p>{{ career.excerpt }}</p>
                       </div>
                     </div>
                   </div>
                   <footer>
                     <ul class="links list-inline">
-                      <li class="node-readmore first last"><a href="/content/creative-director" rel="tag" title="Creative Director">Read more<span class="element-invisible"> about Creative Director</span></a></li>
+                      <li class="node-readmore first last">
+                        <a href="{{ career.url }}" rel="tag" title="{{ career.title }}">Read more<span class="element-invisible"> about {{ career.title }}</span></a>
+                      </li>
                     </ul>
                   </footer>
                 </article>
               </div>
+              {% endfor %}
             </div>
           </div>
         </section>

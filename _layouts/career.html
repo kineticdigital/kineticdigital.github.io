@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+<div class="feature-wrapper">
+  <div class="container">
+    <div class="pageheader">
+      <h1 class="page-header">{{ page.title }}</h1>
+    </div>
+  </div>
+  <div class="featured"></div>
+</div>
+<div class="main-container container">
+  <div class="row">
+    <section class="col-sm-12">
+      <a id="main-content"></a>
+      <div class="region region-content">
+        <section id="block-system-main" class="block block-system clearfix">
+          <article id="node-22" class="node node-jobs clearfix" about="{{ page.url }}" typeof="sioc:Item foaf:Document">
+            <div class="field field-name-body field-type-text-with-summary field-label-hidden">
+              <div class="field-items">
+                <div class="field-item even" property="content:encoded">
+                  {{ page.content }}
+                </div>
+              </div>
+            </div>
+        </section>
+      </div>
+    </section>
+  </div>
+</div>
