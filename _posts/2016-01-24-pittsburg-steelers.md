@@ -2,12 +2,16 @@
 client: Pittsburg Steelers
 logo: "/img/logos/small/steelers_sm.png"
 title: The most popular team in the NFL.
-subheading: "We led the effort to convert the fan site to the Drupal Content Management system for the most popular team in the NFL."
-excerpt: "The Pittsburgh Steelers are one of the most successful franchises in NFL history. Pittsburgh has won more Super Bowl titles (6), and hosted more (11) conference championship games than any other NFL team."
-category: case_study
+subheading: We led the effort to convert the fan site to the Drupal Content Management
+  system for the most popular team in the NFL.
+excerpt: The Pittsburgh Steelers are one of the most successful franchises in NFL
+  history. Pittsburgh has won more Super Bowl titles (6), and hosted more (11) conference
+  championship games than any other NFL team.
 service: Digital Development
 image: "/img/logos/headers/hd_steelers.jpg"
 small_image: "/img/logos/large/feature_steelers.png"
+categories: case_study
+date: 2016-01-24 00:00:00 +0000
 ---
 
 ### Background

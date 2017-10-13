@@ -2,12 +2,16 @@
 client: Vista Campus
 logo: "/img/logos/vista.png"
 title: Supporting Communities through Public Service.
-subheading: "We enhanced features of the digital VISTA campus community for the 50th anniversary of the Americore"
-excerpt: "JBS International contracted Kinetic Co-Founder Chris McGrath to act as a Sr. Drupal Developer to support the Vista Campus, a project of the Corporation for National and Community Service (CNCS)."
-category: case_study
+subheading: We enhanced features of the digital VISTA campus community for the 50th
+  anniversary of the Americore
+excerpt: JBS International contracted Kinetic Co-Founder Chris McGrath to act as a
+  Sr. Drupal Developer to support the Vista Campus, a project of the Corporation for
+  National and Community Service (CNCS).
 service: Digital Development
 image: "/img/logos/headers/hd_vista.jpg"
 small_image: "/img/logos/large/feature_vista.png"
+categories: case_study
+date: 2016-01-23 00:00:00 +0000
 ---
 
 ### The Background

@@ -1,5 +1,6 @@
 ---
 title: Creative Director
+date: 2017-10-13 20:18:28 +0000
 ---
 
 Kinetic is looking for an accomplished Creative Director to partner with as a co-principal in our company. The candidate for this role should be a true expert, ready to build and grow Kinetic’s brand in a highly competitive space. You will be responsible for developing a global Brand strategy, localizing it, and bringing it to life across all digital and traditional channels.
